@@ -18,87 +18,95 @@ import Space from "@/components/Space";
 export default function Home() {
   return (
       <main className="text-white">
-         <div className="bg-neutral-50 shadow-md py-1 px-20 flex items-center justify-between w-full">
-      {/* Left side: Text and Logo */}
-      <div className="flex items-center space-x-4">
-        <div className="flex items-center space-x-2">
+         <div className="bg-neutral-50 shadow-md py-3 px-4 sm:px-10 flex items-center justify-between w-full">
+          <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
+              <Image 
+                src="/logo-1.png" // Replace with your logo path
+                alt="Logo"
+                width={60} // Adjust width for smaller screens
+                height={25} // Adjust height for smaller screens
+                className="object-contain"
+              />
+              <Image 
+                src="/first.png" // Replace with your logo path
+                alt="Logo"
+                width={110} // Adjust width for smaller screens
+                height={35} // Adjust height for smaller screens
+                className="object-contain"
+              />
+            </div>
+          </div>
           
-          {/* Logo */}
-          <Image 
-            src="/logo-1.png" // Replace with your logo path
-            alt="Logo"
-            width={80} // Adjust width for a smaller logo
-            height={30} // Adjust height for a smaller logo
-            className="object-contain"
-          />
-          <Image 
-            src="/first.png" // Replace with your logo path
-            alt="Logo"
-            width={130} // Adjust width for a smaller logo
-            height={40} // Adjust height for a smaller logo
-            className="object-contain"
-          />
-         
+          <div className="flex items-center bg-black py-1 px-2 rounded-full mt-2">
+            <a href="#contact-us" className="text-neutral- font-semibold text-sm hover:bg-clip-text hover:text-fill-transparent hover:bg-gradient-text">
+              Contact Us
+            </a>
+          </div>
         </div>
-      </div>
-      
-      {/* Right side: Contact Us Link */}
-      <div className="flex items-center bg-black py-2 px-4 rounded-3xl mt-2">
-        <a href="#contact-us" className="text-neutral- font-semibold hover:bg-clip-text hover:text-fill-transparent hover:bg-gradient-text">
-          Contact Us
-        </a>
-      </div>
-    </div>
-        <Container className="mt-4 sm:mt-2 flex flex-col lg:flex-row items-center mb-2">
-          <div className="flex flex-col lg:flex-row items-center">
-            <FadeRight>
-              <div className="">
-                <h1 className="font-display items-center text-xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 [text-wrap:balance] sm:text-7xl">
-                  <span className="tracking-wider">Germany</span> Opportunity Card!
-                </h1>
-            <div className="mt-3">
-              <span className="lg:inline hidden tracking-tight text-5xl font-normal text-neutral-100">Unlock Your Future in Germany</span>
+
+        <Container className="mt-12 sm:mt-16 lg:mt-40 flex flex-col lg:flex-row items-center custom-container-height">
+      <div className="flex flex-col lg:flex-row items-center text-center lg:text-left">
+        <FadeRight>
+          <div className="px-4 sm:px-6 lg:px-0">
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 [text-wrap:balance]">
+              <span className="tracking-wider">Germany</span> Opportunity Card!
+            </h1>
+            <div className="mt-4 sm:mt-5">
+              <span className="block lg:hidden tracking-tight text-3xl font-normal text-neutral-100">Unlock Your Future in Germany</span>
+              <span className="hidden lg:block tracking-tight text-5xl font-normal text-neutral-100">Unlock Your Future in Germany</span>
             </div>
-              <p className="mt-6 tracking-tight text-sm font-semibold text-neutral-500">
-              The Germany Opportunity Card is a newly introduced visa scheme by the German government, 
-              designed to attract the skilled professionals from non-EU countries.
+            <p className="mt-4 sm:mt-6 tracking-tight text-base sm:text-sm font-semibold text-neutral-500 break-words">
+              The Germany Opportunity Card is a newly introduced visa scheme by the German government,
+              designed to attract skilled professionals from non-EU countries.
               <span className="font-bold text-neutral-400">
-              This points-based system will allows qualified individuals to live and work in Germany without prior job offer. </span>
-              The Opportunity Card is part of Germany strategy to address its skilled labor shortage and provide opportunities for global talent.
-              </p>
-            </div>
+                This points-based system allows qualified individuals to live and work in Germany without a prior job offer. 
+              </span>
+              The Opportunity Card is part of Germany's strategy to address its skilled labor shortage and provide opportunities for global talent.
+            </p>
+          </div>
         </FadeRight>
-       
-        <FadeIn className="w-[33.75rem] flex-none lg:w-[33.75rem]">
-          
+        
+        <FadeIn className="hidden lg:flex w-[33.75rem] flex-none lg:w-[33.75rem]">
           <Image
             src={imageLaptop}
             sizes="(min-width: 1024px) 41rem, 31rem"
-            className="justify-center lg:justify-end w-full max-w-[60rem] mt-4 ml-16"
+            className="w-full max-w-[60rem] mt-4 ml-16"
+            alt="Laptop Image" // Always include an alt text for accessibility
           />
         </FadeIn>
-        
       </div>
-    
-  </Container>
-  <Testimonials
-          className="mt-24 sm:mt-32 lg:mt-40"
-          client={{ name: "Phobia", logo: logoPhobiaDark }}
-        >
-          The team at <span className="ml-2 mr-2 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 "> [VJC Overeas] </span>  exceeded all expectations during our application process. 
-          Their proactive approach made the entire experience smooth and stress-free, setting a new standard for client service in the industry.
-        </Testimonials>
+    </Container>
+
+
+          <Testimonials
+      className="mt-12 sm:mt-20 md:mt-24 lg:mt-40 px-4 sm:px-6 lg:px-8"
+      client={{ name: "Phobia", logo: logoPhobiaDark }}
+    >
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-neutral-950">
+        The team at 
+        <span className="ml-1 sm:ml-2 mr-1 sm:mr-2 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600">
+          [VJC Overseas]
+        </span> 
+        exceeded all expectations during our application process. 
+        Their proactive approach made the entire experience smooth and stress-free, setting a new standard for client service in the industry.
+      </p>
+    </Testimonials>
+          
         {/* <Requirements/> */}
 
 
         <Clients />
 
         
-        <Testimonials 
-         className="mt-24 sm:mt-32 lg:mt-40"
-         client={{ name: "Phobia", logo: logoPhobiaDark }}>
-          Undergoing Styling and Content Part
-        </Testimonials>
+        <Testimonials
+      className="mt-12 sm:mt-20 md:mt-24 lg:mt-40 px-4 sm:px-6 lg:px-8"
+      client={{ name: "Phobia", logo: logoPhobiaDark }}
+    >
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-neutral-950">
+      Undergoing Styling and Content Part
+        </p>
+    </Testimonials>
         
         <Services />
         
@@ -107,19 +115,27 @@ export default function Home() {
         
         {/* <ContactSection /> */}
         
-        <Testimonials 
+        {/* <Testimonials 
          className="mt-24 sm:mt-32 lg:mt-40"
          client={{ name: "Phobia", logo: logoPhobiaDark }}>
           Undergoing Styling and Content Part
-        </Testimonials>
+        </Testimonials> */}
+        <Testimonials
+      className="mt-12 sm:mt-20 md:mt-24 lg:mt-40 px-4 sm:px-6 lg:px-8"
+      client={{ name: "Phobia", logo: logoPhobiaDark }}
+    >
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-neutral-950">
+      Undergoing Styling and Content Part
+        </p>
+    </Testimonials>
         {/* <Space/> */}
         
-        <Container className="mt-16 sm:mt-32 lg:mt-20">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-            <ContactDetails />
-            <ContactForm />
-          </div>
-        </Container>
+        <Container className="mt-16 sm:mt-32 lg:mt-20 px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 gap-y-12 sm:gap-y-16 lg:grid-cols-2 lg:gap-x-8">
+        <ContactDetails />
+        <ContactForm />
+      </div>
+    </Container>
       
       </main>
     );

@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-container-height {
+    height: auto; /* Adjust as needed */
+    max-height: 37vh; /* Set the maximum height */
+  }
+
+  /* @media (max-width: 640px) {
+    .custom-container-height {
+      max-height: 50vh; 
+    }
+  } */
