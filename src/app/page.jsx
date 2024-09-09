@@ -18,20 +18,20 @@ import Space from "@/components/Space";
 export default function Home() {
   return (
       <main className="text-white">
-         <div className="bg-neutral-50 shadow-md py-3 px-4 sm:px-10 flex items-center justify-between w-full">
+         <div className="bg-neutral-50 shadow-md py-2 px-4 sm:px-10 flex items-center justify-between w-full">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               <Image 
                 src="/logo-1.png" // Replace with your logo path
                 alt="Logo"
-                width={60} // Adjust width for smaller screens
+                width={80} // Adjust width for smaller screens
                 height={25} // Adjust height for smaller screens
                 className="object-contain"
               />
               <Image 
                 src="/first.png" // Replace with your logo path
                 alt="Logo"
-                width={110} // Adjust width for smaller screens
+                width={150} // Adjust width for smaller screens
                 height={35} // Adjust height for smaller screens
                 className="object-contain"
               />
