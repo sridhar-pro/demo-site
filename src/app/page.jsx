@@ -13,7 +13,7 @@ import ContactForm from "@/components/ContactForm";
 import ContactDetails from "@/components/ContactDetails";
 import Requirements from "@/components/Requirements";
 import Space from "@/components/Space";
-import Sample from "@/components/sample"
+
 
 export default function Home() {
   return (
@@ -93,7 +93,7 @@ export default function Home() {
 
         <Clients />
 
-        {/* <Sample /> */}
+        
         <Testimonials 
          className="mt-24 sm:mt-32 lg:mt-40"
          client={{ name: "Phobia", logo: logoPhobiaDark }}>
