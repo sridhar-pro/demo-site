@@ -64,7 +64,7 @@ export default function Home() {
               designed to attract the skilled professionals from non-EU countries.
               <span className="font-bold text-neutral-400">
               This points-based system will allows qualified individuals to live and work in Germany without prior job offer. </span>
-              The Opportunity Card is part of Germany's strategy to address its skilled labor shortage and provide opportunities for global talent.
+              The Opportunity Card is part of Germany strategy to address its skilled labor shortage and provide opportunities for global talent.
               </p>
             </div>
         </FadeRight>
